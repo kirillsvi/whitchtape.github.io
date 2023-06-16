@@ -427,6 +427,16 @@ img {
   position: relative;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 710px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -469,6 +479,11 @@ img {
 .header__left {
   flex: auto;
 }
+@media (max-width: 710px) {
+  .header__left {
+    flex: none;
+  }
+}
 .header__right {
   display: flex;
   z-index: 2;
@@ -482,9 +497,19 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media (max-width: 1400px) {
+  .header__right li a {
+    color: #000000;
+  }
+}
 .header__right li a:hover {
   transition: all 400ms;
   border-bottom: 2px solid #FFFFFF;
+}
+@media (max-width: 710px) {
+  .header__right li a {
+    display: none;
+  }
 }
 .header__right-margin {
   margin-right: 32px;
@@ -496,6 +521,93 @@ img {
   z-index: 1;
   width: 910px;
   height: 550px;
+}
+@media (max-width: 1400px) {
+  .header__img {
+    display: none;
+  }
+}
+
+.header__burger {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  overflow: hidden;
+  z-index: 20;
+}
+.header__burger span {
+  width: 32px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  background-color: #070707;
+  transition: all 0.5s;
+}
+@media (min-width: 710px) {
+  .header__burger {
+    display: none;
+  }
+}
+@media (max-width: 710px) {
+  .header__burger {
+    display: block;
+  }
+}
+
+.header__burger span:nth-of-type(2) {
+  top: calc(50% - 7px);
+}
+
+.header__burger span:nth-of-type(3) {
+  top: calc(50% + 7px);
+}
+
+.header__burger.active span:nth-of-type(1) {
+  display: none;
+}
+
+.header__burger.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.header__burger.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.header__burger-menu {
+  position: fixed;
+  flex-direction: column;
+  background: rgba(246, 246, 246, 0.99);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-500%);
+  transition: transform 0.5s;
+}
+.header__burger-menu li {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+.header__burger-menu li:nth-of-type(1) {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.header__burger-menu.active {
+  transform: translateY(-12%);
 }
 
 .footer {
@@ -656,6 +768,11 @@ img {
 .main__wrap {
   margin-left: 60px;
 }
+@media (max-width: 1400px) {
+  .main__wrap {
+    margin-left: 10px;
+  }
+}
 .main__wrap h1 {
   width: 414px;
   font-family: "Oswald";
@@ -687,6 +804,16 @@ img {
 .dendroinfo__wrap {
   margin-top: 200px;
 }
+@media (max-width: 1400px) {
+  .dendroinfo__wrap {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 710px) {
+  .dendroinfo__wrap {
+    margin-left: 10px;
+  }
+}
 .dendroinfo__wrap-bold {
   font-family: "Oswald";
   font-style: normal;
@@ -709,6 +836,11 @@ img {
 .price {
   margin-top: 70px;
 }
+@media (max-width: 1400px) {
+  .price {
+    margin-top: 50px;
+  }
+}
 .price__title {
   margin-left: auto;
   margin-right: auto;
@@ -723,12 +855,38 @@ img {
 .price__line {
   display: flex;
 }
+@media (max-width: 710px) {
+  .price__line {
+    flex-direction: column;
+  }
+}
 .price__block {
   padding: 50px 60px;
   background: #F2F2F2;
 }
+@media (max-width: 1400px) {
+  .price__block {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 710px) {
+  .price__block {
+    width: 100%;
+  }
+}
 .price__block-margin {
   margin-right: 67px;
+}
+@media (max-width: 1400px) {
+  .price__block-margin {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 710px) {
+  .price__block-margin {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 .price__block p:nth-of-type(1) {
   font-family: "Oswald";
@@ -750,6 +908,11 @@ img {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+}
+@media (max-width: 1400px) {
+  .price__block p:nth-of-type(2) {
+    font-size: 30px;
+  }
 }
 .price__block p:nth-of-type(3) {
   font-family: "Oswald";
@@ -774,10 +937,25 @@ img {
 .map__block {
   position: absolute;
   top: 100px;
-  left: 50px;
+  left: 40px;
   background: #FFFFFF;
   display: flex;
-  padding: 46px 80px;
+  padding: 46px 30px;
+  align-items: center;
+}
+@media (max-width: 1400px) {
+  .map__block {
+    padding: 26px 20px;
+    left: 20px;
+    top: 210px;
+  }
+}
+@media (max-width: 710px) {
+  .map__block {
+    top: 40px;
+    left: 0px;
+    padding: 26px 10px;
+  }
 }
 .map__block p:nth-of-type(1) {
   font-family: "Oswald";
@@ -790,7 +968,12 @@ img {
   width: 133px;
   margin-right: 87px;
 }
-.map__block p:nth-of-type(2) {
+@media (max-width: 710px) {
+  .map__block p:nth-of-type(1) {
+    margin-right: 10px;
+  }
+}
+.map__block p:nth-of-type(2), .map__block p:nth-of-type(3) {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
@@ -799,12 +982,33 @@ img {
   color: #444444;
   margin-top: 50px;
 }
+.map__adress {
+  display: flex;
+  flex-direction: column;
+}
+.map__adress li {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  color: #444444;
+}
+.map__adress li:nth-of-type(2) {
+  margin-top: 10px;
+}
 .map iframe {
   margin-bottom: -3px;
+  max-width: 100%;
 }
 
 .shedule {
   margin-top: 100px;
+}
+@media (max-width: 1400px) {
+  .shedule {
+    margin-top: 70px;
+  }
 }
 
 .plants h1 {
@@ -818,9 +1022,24 @@ img {
   margin-top: 100px;
   margin-bottom: 40px;
 }
+@media (max-width: 710px) {
+  .plants h1 {
+    margin-left: 10px;
+  }
+}
 
 .plants-info {
   margin-top: 300px;
+}
+@media (max-width: 710px) {
+  .plants-info {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 710px) {
+  .plants-info__wrap li {
+    margin-left: 10px;
+  }
 }
 .plants-info__wrap li:nth-of-type(1) {
   font-family: "Oswald";
@@ -841,6 +1060,11 @@ img {
   margin-top: 40px;
   width: 470px;
 }
+@media (max-width: 710px) {
+  .plants-info__wrap li:nth-of-type(2) {
+    max-width: 100%;
+  }
+}
 .plants-info__wrap li:nth-of-type(3) {
   font-family: "Gilroy";
   font-style: normal;
@@ -851,12 +1075,36 @@ img {
   margin-top: 5px;
   width: 470px;
 }
+@media (max-width: 710px) {
+  .plants-info__wrap li:nth-of-type(3) {
+    max-width: 100%;
+  }
+}
 .plants-info__wrap img {
   margin-left: auto;
 }
 .plants-info__block {
   display: flex;
 }
+@media (max-width: 1400px) {
+  .plants-info__block {
+    flex-direction: column;
+  }
+}
 .plants-info__block-margin {
   margin-top: 30px;
+}
+@media (max-width: 1400px) {
+  .plants-info__block img {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media (max-width: 710px) {
+  .plants-info__block img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 310px;
+  }
 }

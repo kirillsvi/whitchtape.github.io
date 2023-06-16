@@ -16,4 +16,3 @@ window.addEventListener('keydown', function(event) {
         popupWrap.classList.remove('open');
     }
 })
-
