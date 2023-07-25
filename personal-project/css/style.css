@@ -1491,7 +1491,7 @@ footer .social-media__link:hover {
   left: -31px;
   width: 14px;
   height: 14px;
-  background: url(/img/checkRegister.svg) no-repeat;
+  background: url(../img/checkRegister.svg) no-repeat;
   opacity: 0;
   box-sizing: border-box;
   transition: 0.3s;
@@ -1722,7 +1722,7 @@ footer .social-media__link:hover {
   left: -31px;
   width: 14px;
   height: 14px;
-  background: url(/img/checkRegister.svg) no-repeat;
+  background: url(../img/checkRegister.svg) no-repeat;
   opacity: 0;
   box-sizing: border-box;
   transition: 0.3s;
@@ -2379,25 +2379,25 @@ footer .social-media__link:hover {
   color: #fff;
 }
 .intro__slider-slide:nth-child(1) {
-  background-image: url(/img/slider1.jpg);
+  background-image: url(../img/slider1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .intro__slider-slide:nth-child(2) {
-  background-image: url(/img/slider2.jpg);
+  background-image: url(../img/slider2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .intro__slider-slide:nth-child(3) {
-  background-image: url(/img/slider3.jpg);
+  background-image: url(../img/slider3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .intro__slider-slide:nth-child(4) {
-  background-image: url(/img/slider4.jpg);
+  background-image: url(../img/slider4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2514,7 +2514,7 @@ footer .social-media__link:hover {
 .about__text-right {
   border: 25px solid #070707;
   border-image-slice: 27;
-  border-image-source: url(/img/borderRight.svg);
+  border-image-source: url(../img/borderRight.svg);
   box-sizing: border-box;
   margin-bottom: 20px;
   max-width: 480px;
@@ -2523,7 +2523,7 @@ footer .social-media__link:hover {
 .about__text-left {
   border: 25px solid #070707;
   border-image-slice: 27;
-  border-image-source: url(/img/borderLeft.svg);
+  border-image-source: url(../img/borderLeft.svg);
   box-sizing: border-box;
   margin-bottom: 20px;
   max-width: 480px;
@@ -3539,7 +3539,7 @@ footer .social-media__link:hover {
 }
 .checkbox-custom-black:hover::after {
   position: absolute;
-  background: url(/img/checkBlack.svg) no-repeat;
+  background: url(../img/checkBlack.svg) no-repeat;
   left: -32px;
   opacity: 0.5;
 }
@@ -3550,7 +3550,7 @@ footer .social-media__link:hover {
 }
 .checkbox-custom-black::after {
   position: absolute;
-  background: url(/img/checkBlack.svg) no-repeat;
+  background: url(../img/checkBlack.svg) no-repeat;
   left: -32px;
 }
 
@@ -3584,91 +3584,91 @@ footer .social-media__link:hover {
 }
 
 .checkbox-custom-blue:hover::after {
-  background: url(/img/checkBlue.svg) no-repeat;
+  background: url(../img/checkBlue.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-blue::before {
   border: 2.5px solid #2176FF;
 }
 .checkbox-custom-blue::after {
-  background: url(/img/checkBlue.svg) no-repeat;
+  background: url(../img/checkBlue.svg) no-repeat;
 }
 
 .checkbox-custom-lightBlue:hover::after {
-  background: url(/img/checkLightBlue.svg) no-repeat;
+  background: url(../img/checkLightBlue.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-lightBlue::before {
   border: 2.5px solid #33A1FD;
 }
 .checkbox-custom-lightBlue::after {
-  background: url(/img/checkLightBlue.svg) no-repeat;
+  background: url(../img/checkLightBlue.svg) no-repeat;
 }
 
 .checkbox-custom-yellow:hover::after {
-  background: url(/img/checkYellow.svg) no-repeat;
+  background: url(../img/checkYellow.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-yellow::before {
   border: 2.5px solid #FDCA40;
 }
 .checkbox-custom-yellow::after {
-  background: url(/img/checkYellow.svg) no-repeat;
+  background: url(../img/checkYellow.svg) no-repeat;
 }
 
 .checkbox-custom-turquoise:hover::after {
-  background: url(/img/checkTurquoise.svg) no-repeat;
+  background: url(../img/checkTurquoise.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-turquoise::before {
   border: 2.5px solid #57E2E5;
 }
 .checkbox-custom-turquoise::after {
-  background: url(/img/checkTurquoise.svg) no-repeat;
+  background: url(../img/checkTurquoise.svg) no-repeat;
 }
 
 .checkbox-custom-orange:hover::after {
-  background: url(/img/checkOrange.svg) no-repeat;
+  background: url(../img/checkOrange.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-orange::before {
   border: 2.5px solid #F79824;
 }
 .checkbox-custom-orange::after {
-  background: url(/img/checkOrange.svg) no-repeat;
+  background: url(../img/checkOrange.svg) no-repeat;
 }
 
 .checkbox-custom-pink:hover::after {
-  background: url(/img/checkPink.svg) no-repeat;
+  background: url(../img/checkPink.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-pink::before {
   border: 2.5px solid #E08DAC;
 }
 .checkbox-custom-pink::after {
-  background: url(/img/checkPink.svg) no-repeat;
+  background: url(../img/checkPink.svg) no-repeat;
 }
 
 .checkbox-custom-purple:hover::after {
-  background: url(/img/checkPurple.svg) no-repeat;
+  background: url(../img/checkPurple.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-purple::before {
   border: 2.5px solid #6A7FDB;
 }
 .checkbox-custom-purple::after {
-  background: url(/img/checkPurple.svg) no-repeat;
+  background: url(../img/checkPurple.svg) no-repeat;
 }
 
 .checkbox-custom-green:hover::after {
-  background: url(/img/checkGreen.svg) no-repeat;
+  background: url(../img/checkGreen.svg) no-repeat;
   opacity: 0.5;
 }
 .checkbox-custom-green::before {
   border: 2.5px solid #45CB85;
 }
 .checkbox-custom-green::after {
-  background: url(/img/checkGreen.svg) no-repeat;
+  background: url(../img/checkGreen.svg) no-repeat;
 }
 
 .filter-views-radio,

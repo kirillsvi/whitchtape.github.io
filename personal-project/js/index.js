@@ -259,13 +259,11 @@ const closeMenuBtn = document.querySelector('.close__menu_js');
 btnLogOut.addEventListener('click', function() {
 	localStorage.removeItem('token');
 	rerenderLinks();
-	location.pathname = '/';
 });
 
 btnLogOutMobile.addEventListener('click', function() {
 	localStorage.removeItem('token');
 	rerenderLinks();
-	location.pathname = '/';
 });
 
 
